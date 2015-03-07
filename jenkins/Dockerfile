@@ -1,3 +1,9 @@
+# This file is stolen from the official jenkins file on docker.io
+#
+# docker build -t sverrest/jenkins .
+# docker run --name jenkins-server -d -p 8080:8080 -p 50000:50000 sverrest/jenkins
+#
+
 FROM java:openjdk-7u65-jdk
 
 RUN apt-get update && apt-get install -y wget git curl zip build-essential iperf && rm -rf /var/lib/apt/lists/*
